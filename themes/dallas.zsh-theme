@@ -26,7 +26,7 @@ ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%})"
 # Do nothing if the branch is clean (no changes).
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%}<ok>"
 # Add 3 cyan ✗s if this branch is diiirrrty! Dirty branch!
-ZSH_THEME_GIT_PROMPT_DIRTY="$fg[yellow]<dirty>"
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[yellow]%}<dirty>"
 
 # Put it all together!
 PROMPT="$DALLAS_CURRENT_TIME_ $DALLAS_CURRENT_USER_ $DALLAS_CURRENT_RUBY_$DALLAS_CURRENT_LOCA_$DALLAS_PROMPT_CHAR_ "
