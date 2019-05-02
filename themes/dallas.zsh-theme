@@ -19,6 +19,8 @@ DALLAS_CURRENT_LOCA_="%{$fg[cyan]%}%~\$(git_prompt_info)%{$reset_color%}"
 DALLAS_CURRENT_USER_="%{$fg[red]%}%n%{$reset_color%}"
 # Use a % for normal users and a # for privelaged (root) users.
 DALLAS_PROMPT_CHAR_="%{$fg[white]%}%(!.#.%%)%{$reset_color%}"
+# New line.
+NEWLINE=$'\n $ '
 # For the git prompt, use a white @ and blue text for the branch name
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[white]%}(%{$fg[cyan]%}"
 # Close it all off by resetting the color and styles.
@@ -29,4 +31,4 @@ ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%}<ok>"
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[yellow]%}<dirty>"
 
 # Put it all together!
-PROMPT="$DALLAS_CURRENT_TIME_ $DALLAS_CURRENT_USER_ $DALLAS_CURRENT_RUBY_$DALLAS_CURRENT_LOCA_$DALLAS_PROMPT_CHAR_ "
+PROMPT="$DALLAS_CURRENT_TIME_ $DALLAS_CURRENT_USER_ $DALLAS_CURRENT_RUBY_$DALLAS_CURRENT_LOCA_${NEWLINE}"
